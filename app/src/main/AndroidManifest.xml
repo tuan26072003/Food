@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.o7planning.knfood">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".KNFoodApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo3"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo3"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Menu.Personal.UpdateInfo" />
+        <activity android:name=".Menu.Messenger.RoomMessActivity" />
+        <activity android:name=".Menu.Cart.ConfirmCartActivity" />
+        <activity android:name=".Menu.Cart.CartActivity" />
+        <activity android:name=".Menu.Store.StoreDetailsActivity" />
+        <activity android:name=".Menu.HoaDon.HoaDonChiTiet" />
+        <activity android:name=".Menu.HoaDon.HistoryBillActivity" />
+        <activity android:name=".Menu.Store.ListStoreActivity"/>
+        <activity android:name=".Function.OrderFoodActivity" />
+        <activity android:name=".Ticket.VoucherDetails" />
+        <activity android:name=".Ticket.VoucherActivity" />
+        <activity android:name=".Menu.MenuActivity" />
+        <activity android:name=".Login.Premire_Tutorial.Premire" />
+        <activity android:name=".Login.GetPassword" />
+        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".Login.RegisterActivity" />
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".map.MapActivity"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/API_KEY"/>
+    </application>
+
+</manifest>
